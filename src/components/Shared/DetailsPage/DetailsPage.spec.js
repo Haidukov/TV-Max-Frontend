@@ -13,4 +13,15 @@ describe('<DetailsPage />', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('should apply default image if not present', () => {
+    const { container } = render(
+      <DetailsPage
+        summary='<div>summary</div>'
+        name='test name'
+      />
+    );
+    const img = container.querySelector('img');
+    expect(img.getAttribute('src')).toBeTruthy();
+  });
 });

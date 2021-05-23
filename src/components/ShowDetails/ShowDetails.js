@@ -21,7 +21,7 @@ const ShowDetails = () => {
 
   useEffect(() => {
     dispatch(fetchShowRequest(showId));
-  }, []);
+  }, [showId]);
 
   if (isLoading) {
     return <PageSpinner />;

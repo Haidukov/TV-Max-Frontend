@@ -131,7 +131,7 @@ describe('<EpisodeepisodesPage />', () => {
     it('should link to episode details page', () => {
       const episodeEl = findEpisodes(wrapper)[0];
       const link = findLink(episodeEl);
-      expect(link.href).toContain(`/episodes/${episodes[0].id}`);
+      expect(link.getAttribute('href')).toBe(`/episodes/${episodes[0].id}`);
     });
 
     it('should match snapshot', () => {

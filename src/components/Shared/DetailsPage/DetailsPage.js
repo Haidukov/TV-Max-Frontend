@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import s from './DetailsPage.scss';
+import defaultImageSrc from '../../../assets/images/no-img-landscape-text.png';
 
 const DetailsPage = ({ name, summary, imageUrl }) => (
   <main data-testid='details'>
@@ -23,7 +24,7 @@ DetailsPage.propTypes = {
 DetailsPage.defaultProps = {
   name: '',
   summary: '',
-  imageUrl: ''
+  imageUrl: defaultImageSrc
 };
 
 export default DetailsPage;
