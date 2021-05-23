@@ -2,8 +2,6 @@ import API from '../api';
 import show from '../../fixtures/show.json';
 import episodes from '../../fixtures/episodes.json';
 
-const id = 2;
-
 describe('API', () => {
   let client;
   let apiService;
@@ -17,15 +15,15 @@ describe('API', () => {
 
   test('getShow', async () => {
     client.get.mockResolvedValueOnce(show);
-    const result = await apiService.getShow(id);
-    expect(client.get).toHaveBeenCalledWith(`/shows/${id}`);
+    const result = await apiService.getShow(show.id);
+    expect(client.get).toHaveBeenCalledWith(`/shows/${show.id}`);
     expect(result).toBe(show);
   });
 
   test('getShowEpisodes', async () => {
     client.get.mockResolvedValueOnce(episodes);
-    const result = await apiService.getShowEpisodes(id);
-    expect(client.get).toHaveBeenCalledWith(`/shows/${id}/episodes`);
+    const result = await apiService.getShowEpisodes(show.id);
+    expect(client.get).toHaveBeenCalledWith(`/shows/${show.id}/episodes`);
     expect(result).toBe(episodes);
   });
 

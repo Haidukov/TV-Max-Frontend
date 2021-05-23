@@ -4,11 +4,7 @@ import { MemoryRouter, Route } from 'react-router';
 import { render } from '@testing-library/react';
 import ShowEpisodes from './ShowEpisodes';
 import configureStore from '../../store';
-import { fetchEpisodesRequest } from '../../store/modules/actions';
-import show from '../../fixtures/show.json';
 import episodes from '../../fixtures/episodes.json';
-
-const episode = episodes[0];
 
 const LOADING_EPISODES_SHOW_ID = 1;
 const FAILED_EPISODES_SHOW_ID = 2;
