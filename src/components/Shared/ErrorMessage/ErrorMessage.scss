@@ -1,0 +1,9 @@
+@import '../../../assets/styles/variables.scss';
+
+.error {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: $red;
+}

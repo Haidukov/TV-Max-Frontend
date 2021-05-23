@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EpisodeepisodesPage /> When data loaded should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Number
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Date
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            <a
+              href="/episodes/28"
+            >
+              Pilot
+            </a>
+          </td>
+          <td>
+            September 22, 2011
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            <a
+              href="/episodes/29"
+            >
+              Ghosts
+            </a>
+          </td>
+          <td>
+            September 29, 2011
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3
+          </td>
+          <td>
+            <a
+              href="/episodes/30"
+            >
+              Mission Creep
+            </a>
+          </td>
+          <td>
+            October 6, 2011
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<EpisodeepisodesPage /> When error occured should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="error"
+    role="alert"
+  >
+    Failed to load episodes list
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<EpisodeepisodesPage /> When loading episode should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="spinner"
+    role="status"
+  >
+    <span
+      class="css-1k4jg2i"
+    />
+  </div>
+</DocumentFragment>
+`;

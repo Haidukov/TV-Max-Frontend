@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowDetails /> When data loaded should match snapshot 1`] = `
+<DocumentFragment>
+  <main
+    data-testid="details"
+  >
+    <h1>
+      Person of Interest
+    </h1>
+    <div
+      class="details"
+    >
+      <img
+        alt="Person of Interest"
+        class="logo"
+        src="https://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg"
+      />
+      <div>
+        <p>
+          You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered "irrelevant". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.
+        </p>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`<ShowDetails /> When error occured should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="error"
+    role="alert"
+  >
+    Failed to load show data
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<ShowDetails /> When loading show should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="spinner"
+    role="status"
+  >
+    <span
+      class="css-1k4jg2i"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables.scss';
+
+
+.table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    td, th {
+        border: 1px solid $table-cell-1;
+        padding: 8px;
+    }
+
+    tr {
+        &:nth-child(even) {
+            background-color: $table-cell-2;
+        }
+    
+        &:hover {
+            background-color: $table-cell-1;
+        }
+    }
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: $table-header;
+        color: white;
+    }
+}

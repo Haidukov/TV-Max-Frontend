@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EpisodeDetailsPage /> When data loaded should match snapshot 1`] = `
+<DocumentFragment>
+  <main
+    data-testid="details"
+  >
+    <h1>
+      Pilot
+    </h1>
+    <div
+      class="details"
+    >
+      <img
+        alt="Pilot"
+        class="logo"
+        src="https://static.tvmaze.com/uploads/images/medium_landscape/35/89344.jpg"
+      />
+      <div>
+        <p>
+          John Reese is a former CIA operative living off the grid in NYC. When Reese is hauled into NYPD's 8th Precinct for a skirmish on the subway, he's bailed out by a man he doesn't know: Mr. Finch, a mysterious billionaire. Finch offers Reese a choice: stay on the streets and drink himself to death -- or join him in his mission to stop violent crimes before they happen. Finch has access to a secret source of information, one that identifies people who are about to be involved in violent crimes. There's just one catch: he doesn't know if these people will be the victims or the perpetrators. Skeptical but intrigued, Reese agrees to help. Together, Reese and Finch work to discover what danger is about to befall Assistant District Attorney Diane Hansen. Their actions garner the unwanted attention of NYPD homicide detective Carter -- a dedicated veteran cop who's not fond of vigilantes -- and Detective Fusco, a precinct detective who stands in the way of Reese's plans.
+        </p>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`<EpisodeDetailsPage /> When error occured should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="error"
+    role="alert"
+  >
+    Failed to load episode data
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<EpisodeDetailsPage /> When loading episode should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="spinner"
+    role="status"
+  >
+    <span
+      class="css-1k4jg2i"
+    />
+  </div>
+</DocumentFragment>
+`;

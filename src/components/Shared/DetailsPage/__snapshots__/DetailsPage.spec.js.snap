@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DetailsPage /> should match snapshot 1`] = `
+<DocumentFragment>
+  <main
+    data-testid="details"
+  >
+    <h1>
+      test name
+    </h1>
+    <div
+      class="details"
+    >
+      <img
+        alt="test name"
+        class="logo"
+        src="http://test.com/image.jpg"
+      />
+      <div>
+        <div>
+          summary
+        </div>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;

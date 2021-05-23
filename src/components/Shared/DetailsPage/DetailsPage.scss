@@ -1,0 +1,12 @@
+@import '../../../assets/styles/variables.scss';
+
+.details {
+    display: flex;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    margin-right: 15px;
+}
