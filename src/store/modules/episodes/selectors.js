@@ -1,5 +1,15 @@
-export const getShowEpisodes = id => state =>
-  state.episodes.byShow[id]?.ids?.map(episodeId => state.episodes.byId[episodeId]?.data) || [];
+import { createSelector } from 'reselect';
+import { wrapSelector } from '../../../utils/selectors';
+
+const getShowEpisodeIds = id => state => state.episodes.byShow[id]?.ids || [];
+
+const getEpisodeByIdMap = state => state.episodes.byId;
+
+export const getShowEpisodes = wrapSelector(id => createSelector(
+  getShowEpisodeIds(id),
+  getEpisodeByIdMap,
+  (ids, byId) => ids?.map(episodeId => byId[episodeId]?.data)
+));
 
 export const getShowEpisodesLoading = id => state => !!state.episodes.byShow[id]?.isLoading;
 
